@@ -1,9 +1,7 @@
 import pygame
 
-# Initialize Pygame
 pygame.init()
 
-# Constants
 GRID_SIZE = 30
 GRID_WIDTH = 20
 GRID_HEIGHT = 20
@@ -12,7 +10,6 @@ WHITE = (255, 255, 255)
 BLUE = (0, 0, 255)
 
 
-# Function to get grid coordinates from mouse click position
 def get_grid_coordinates(pos):
     x, y = pos
     grid_x = x // GRID_SIZE
@@ -20,7 +17,6 @@ def get_grid_coordinates(pos):
     return grid_x, grid_y
 
 
-# Main function
 def main():
     screen = pygame.display.set_mode(WINDOW_SIZE)
     pygame.display.set_caption("Grid")
